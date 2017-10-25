@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif');
+$color-header: #303030;
+$color-header-title: #CC00FF;
+.header{
+    position: fixed;
+    height: 45px;
+    background-color: $color-header;
+    display: flex;
+    top: 0;
+    right: 0;
+    left: 0;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    justify-content: space-between;
+    svg{
+        width: 25px;
+        fill: white;
+    }
+}
+
+.header .header__title{
+    text-decoration: none;
+    font-family: Indie Flower;
+    text-align: left;
+    padding-left: 15px;
+    flex: 1;
+    color: $color-header-title;
+    font-size: 25px;
+}
+.header .header__topics{
+    text-decoration: none;
+    font-family: Indie Flower;
+    text-align: left;
+    padding-left: 10px;
+    flex: 1;
+    color: $color-header-title;
+    font-size: 25px;
+}
+
+.header .header__menu{
+    max-width: 35px;
+    flex: 2;
+    cursor: pointer;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.header .header__menu--search{
+    max-width: 35px;
+    flex: 2;
+    cursor: pointer;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 1px; 
+    padding-right: 12px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #303030;
+    overflow-x: hidden;
+    transition: 0.5s;
+    border: 0.1px solid #504d4d;
+}
+
+.sidenav a {
+    text-align: left;
+    border-top: 10px;
+    margin-left: 5%;
+    font-size:15px;
+    color: #993333 ;
+    display: block;
+    transition: 0.3s;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    vertical-align: middle;
+}
+
+.iconDetails {
+	margin-left:5%;
+	margin-right:10%;
+	margin-bottom: 5%;
+	float:left; 
+	height:70px;
+	width:100px; 
+} 
+.iconDetails_sidebar {
+	margin-right:10%;
+	float:left; 
+	height:30px;
+    width:30px; 
+    padding-top: 5px;
+}
+
+.header__img{
+    top: 0;
+    left: -20;
+    right: 0;
+    height: 140px;
+    position: relative;
+}
+
+.sidenav-close-btn{
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+
+.sidenav-close-btn span { 
+    color: white; 
+    font: bold 24px/45px Helvetica, Sans-Serif; 
+    letter-spacing: -1px;  
+    padding: 10px; 
+}
+.character-pic{
+    float: left; 
+    border-radius: 5px;
+}
+
+.arcadia-bay-news{
+    font-family: Anton;
+    padding-top: 30px;
+    text-align: center;
+    letter-spacing: 5px;
+    color: #BDBDBD;
+    bottom: 0;
+}
+.arcadia-bay-news__topic{
+    font-family: Indie Flower;
+    padding-top: 30px;
+    text-align: center;
+    letter-spacing: 5px;
+    color: $color-header-title;
+    bottom: 0;
+}
+.arcadia-bay-news-headline{
+    font-family: Droid Serif;
+    font-size: 20px;
+    padding-top: 5px;
+    text-align: center;
+    letter-spacing: 5px;
+    color: #BDBDBD;
+    bottom: 0;
+}
+
+.headline-image{
+    width: 380px;
+    height: 200px;
+}
+
+.news-explanation{
+    font-family: Droid Serif;
+    font-size: 15px;
+    padding-top: 5px;
+    text-align: justify;
+    color: #BDBDBD;
+    bottom: 0;
+}
+
+.header .search-bar{
+    padding-right: 70px;
+    outline: none;
+    background-color: $color-header;
+    border: none;
+    font-size: 15px;
+    color: white;
+}
+
+.see-more{
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Indie Flower;
+    
+}
+
+a{
+    text-decoration: none;
+    color: $color-header-title;
+}
